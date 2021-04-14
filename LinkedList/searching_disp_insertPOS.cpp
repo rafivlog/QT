@@ -10,6 +10,7 @@ int main()
     struct node *newnode,*head,*temp;
     head = 0;
     int n,num;
+    cout<<"How many number of node be created ? "<<endl;
     cin>>n;
     for(int i=0; i<n; i++)
     {
@@ -28,13 +29,6 @@ int main()
         }
     }
     temp = head ;
-    while(temp!=0)
-    {
-        cout<<temp->data<<" ";
-        temp = temp ->next;
-    }
-    cout<<endl;
-
     while(1)
     {
         int choice;
