@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+#define khela_sesh return 0;
+using namespace std;
+int main()
+{
+    int a, b;
+    cin>>a>>b;
+    for (int i = b - a; i > 0; i--)
+    {
+        if ((a + i - 1) / i < b / i)
+        {
+            cout<<i<<endl;
+            khela_sesh
+        }
+    }
+}
